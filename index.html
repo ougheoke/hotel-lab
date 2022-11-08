@@ -14,9 +14,8 @@
 <link rel="stylesheet" href="./styles/style.css">
 </head>
   
-<!-- <div class="container-fluid"> -->
 
-  <body>
+<body>
 <!-- navbar content -->
   <nav class="navbar navbar-custom navbar-expand-sm navbar-light">
     <div class="container-fluid">
@@ -30,7 +29,9 @@
             <a class="nav-link" href="https://github.com/ougheoke/hotel-lab.git" target="_blank">Source Code</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./styles/style.css">Page Validity</a>
+            <a class="nav-link" 
+            href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fougheoke.github.io%2Fhotel-lab%2F#l190c13">
+            Page Validity</a>
           </li>
         </ul>
       </div>
@@ -50,19 +51,6 @@
     </div>
   </header>
 
-  <!-- navbar -->
-<nav class="navbar navbar-expand-sm" id="navbar">
-<div class="container-fluid">
-     
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      
-        
-    </ul>
-  </div>
-</div>
-</nav>
-<!-- navbar -->
 
 
 <div class="container">
@@ -77,25 +65,23 @@
     <!--form starts here -->
     <form class="needs-validation" novalidate>
       <div class="mb-3">
-        <label for="first-name" class="form-label">First name</label>
+        <label for="first-name" class="form-label">First Name</label>
         <input
           required
           type="text"
           class="form-style"
           id="first-name"
-          placeholder="Kim"
-        />
+          placeholder="Kim">
       </div>
 
       <div class="mb-3">
-        <label for="last-name" class="form-label">Last name</label>
+        <label for="last-name" class="form-label">Last Name</label>
         <input
           required
           type="text"
           class="form-style"
           id="last-name"
-          placeholder="Kardashian"
-        />
+          placeholder="Kardashian">
 
       </div>
       <div class="mb-3">
@@ -105,8 +91,7 @@
           type="email"
           class="form-style"
           id="email"
-          placeholder="kimk@sample.com"
-        />
+          placeholder="kimk@sample.com">
       </div>
       
       <div class="mb-3">
@@ -116,16 +101,14 @@
           class="form-style"
           type="password" 
           id="password" 
-          name="password"
-          />
+          name="password">
       </div>
       
       <div class="mb-3 form-check">
         <input 
         type="checkbox" 
         class="form-check-input" 
-        id="exampleCheck1"
-        />
+        id="exampleCheck1">
         <label for="exampleCheck1" class="form-check-label" >Suscribe to our newsletter</label>
       </div>
 
@@ -145,9 +128,9 @@
           value="2023-01">
       </div>
       
-      <hr/>
+      <hr>
 
-      <div>
+      <!-- <div> -->
         <div class="mb-3">
 
           <!-- Dress Texture Options -->
@@ -162,7 +145,7 @@
             <select id="dressColor" class="form-select" name="dress">
               <option value="" disabled selected>Select a color</option>
               <optgroup label="Core Colors">
-              <option value="Heather Grey Dress Size">Heather Grey <i class="fa-solid fa-circle"></i></option>
+              <option value="Heather Grey Dress Size">Heather Grey</option>
               <option value="Onyx Dress Size">Onyx</option>
             </optgroup>
             <optgroup label="Seasonal">
@@ -177,7 +160,7 @@
 
             <!-- Size Options disabled until dress color is chosen. Options displayed in JS script -->
             <label for="dress" class="form-label">Size</label>
-              <select id="dress" class="form-select" type="select" name="dress" disabled>
+              <select id="dress" class="form-select" name="dress" disabled>
                 <option>You must select a dress color first.</option>
               </select>
       </div>
@@ -187,7 +170,7 @@
         <input type="reset" value="Clear Form" class="btn btn-secondary">
         <button id="submitButton" class="btn btn-primary" type="submit">Submit</button>
         </div>
-      </form>
+    </form>
       <!-- end of form -->
     
       <!-- card body ends -->
