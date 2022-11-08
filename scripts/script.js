@@ -23,19 +23,19 @@ $(function(){
       $.each(dresses, function(key, value) {
           //match size to dress selected
           if (inputVal === value[0]) {
-              $.each(value, function(nestKey, nestValue) {
-                  // console.log(nestKey);
-
-                  switch (nestKey) {
+              $.each(value, function(dressKey, dressValue) {
+                  
+                //Switch case to choose when to display the size dropdown based on color choice.
+                  switch (dressKey) {
                       case 0:
-                          $("label[for=dress]").text(nestValue);
+                          $("label[for=dress]").text(dressValue);
                           $("#dress").empty();
                           $("#dress").append(
-                              $("<option>").text(`Select a ${nestValue} `)
+                              $("<option>").text(`Select ${dressValue} `)
                           );
                           break;
                       case 1:
-                          $.each(nestValue, function(nameKey, nameValue) {
+                          $.each(dressValue, function(nameKey, nameValue) {
                               console.log(nameKey, nameValue);
 
                               $("#dress").append(
@@ -51,9 +51,3 @@ $(function(){
 
 
 });//end of doc
-
-
-
-
-
-
