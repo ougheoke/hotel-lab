@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
  <title>SKIMS Waitlist</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" 
-            href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fougheoke.github.io%2Fhotel-lab%2F#l190c13" target="_blank">
+            href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fougheoke.github.io%2Fhotel-lab%2F#l190c13">
             Page Validity</a>
           </li>
         </ul>
@@ -101,7 +102,8 @@
           class="form-style"
           type="password" 
           id="password" 
-          name="password">
+          name="password"
+          placeholder="Enter Password">
       </div>
       
       <div class="mb-3 form-check">
@@ -130,7 +132,6 @@
       
       <hr>
 
-      <!-- <div> -->
         <div class="mb-3">
 
           <!-- Dress Texture Options -->
@@ -139,6 +140,44 @@
           <label for="dressType">Regular</label><br>
           <input type="radio" id="shimmerType" value="shimmer" name="dressType">
           <label for="dressType">Shimmer</label><br>
+
+          <!-- Dress color indication tags -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <small style="font-size: medium;">Heather Grey |</small>
+              <small style="font-size: medium;">Onyx</small>
+              </div>
+            
+            <div class="col-md-8"> 
+              <small style="font-size: medium;">Marble |</small>
+              <small style="font-size: medium;">Oxide |</small>
+              <small style="font-size: medium;">Graphite |</small>
+              <small style="font-size: medium;">Hot Pink |</small>
+              <small style="font-size: medium;">Wine |</small>
+              <small style="font-size: medium;">Cocoa</small>
+             </div>
+          </div>
+         </div>
+
+          <!-- dress color options -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <i style="font-size:65px; color: #c6cbcc" class="fa">&#xf111;</i>
+              <i style="font-size:65px; color: #2d2d2f" class="fa">&#xf111;</i>
+            </div>
+            
+          <div class="col-md-8"> 
+            <i style="font-size:65px; color: #f0eee9" class="fa">&#xf111;</i> 
+            <i style="font-size:65px; color: #5e4c40" class="fa">&#xf111;</i>
+            <i style="font-size:65px; color: #373c41" class="fa">&#xf111;</i>
+            <i style="font-size:65px; color: #af556a" class="fa">&#xf111;</i>
+            <i style="font-size:65px; color: #401414" class="fa">&#xf111;</i>
+            <i style="font-size:65px; color: #49352e" class="fa">&#xf111;</i>
+          </div>
+         </div>
+        </div>
 
           <!-- Dress Restock Options -->
           <label for="dressColor" class="form-label"><b>Choose your dress color</b></label>
